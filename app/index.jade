@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport',content='initial-scale=1')
+    title 5050
+    link(href='favicon.ico',rel="icon")
+    link(href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic",rel='stylesheet')
+    link(href="http://fonts.googleapis.com/css?family=Playball",rel="stylesheet")
+    link(href='css/app.css',rel='stylesheet')
+  body
+    #header.wrap
+      #logo: a(href='./') 5050
+      ul
+        li: a(data-scroll-nav='0',href='#about') 關於/About
+        li: a(data-scroll-nav='1',href='#posts') 圖表/Works
+        li: a(data-scroll-nav='2',href='#contact') 留言/Contact
+      a#pull &#9776;
+      .clearfix
+
+    #about(data-scroll-index='0',data-scroll-reveal)
+      h1 The Election<br>Experiments
+      h2 50 days, 50 graphs
+      a#scroll(href="#posts"): i.angle.down.icon
+
+    ol#posts.wrap(data-scroll-index='1',data-scroll-reveal)
+      li(style='background-image:url(res/slide1.jpg)')
+        .fg
+          h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          span Lorem Ipsum
+
+    #contact(data-scroll-index='2',data-scroll-reveal)
+      #disqus_thread.wrap
+      noscript Please enable JavaScript to view the
+        a(href='http://disqus.com/?ref_noscript') comments powered by Disqus.
+      a.dsq-brlink(href='http://disqus.com') comments powered by
+        span.logo-disqus Disqus
+
+    footer
+      .wrap
+        .by Page design by dirty
+        | g0v 50/50 project
+  
+    script(src='app.js')
+    script var disqus_identifier = 'nckuee-redesign.main'
+    script(src='//nckuee-redesign.disqus.com/embed.js')
+
+//- vi:et:nowrap:sw=2:ts=2 

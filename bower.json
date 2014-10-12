@@ -1,0 +1,14 @@
+{
+  "name": "ani",
+  "dependencies": {
+    "jquery": "^2.0.3",
+    "reset-css": "^2.0.20110126",
+    "semantic-ui": "^0.19.3"
+  },
+  "overrides": {
+    "semantic-ui": {
+      "main": "build/packaged/{**/*.min.*,fonts/*}"
+    }
+  },
+  "version": "0.0.1"
+}

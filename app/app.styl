@@ -1,0 +1,160 @@
+$blue = #6ECFF5
+$green = #A1CF64
+$orange = #F05940
+$red = #D95C5C
+$disqus-width = 90%
+$hackpad-width = 90%
+
+body, div
+  font-family "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, "微軟正黑體", sans-serif
+
+body
+  background-color #fff
+  font-size 100%
+  a
+    text-decoration none
+    transition .5s all
+
+i.icon
+  margin-right 0
+
+.clearfix
+  clear both
+
+.wrap
+  margin 0 auto
+  width 70%
+  @media screen and (max-width: 768px)
+    width 80%
+
+#header
+  font-weight 200
+  margin 0 auto
+  position relative
+  a
+    color #aaa
+    line-height 72px
+    text-transform uppercase
+  #logo a, .active a, a:hover
+    color #333
+  #logo
+    float left
+    font-size 2.5em
+    font-weight 200
+  ul
+    float right
+    padding 0
+    li
+      float left
+      a
+        padding .2em 1.5em
+  #pull
+    cursor pointer
+    display none
+  @media screen and (max-width: 768px)
+    ul
+      display none
+      height auto
+      width 100%
+      li
+        float none
+        text-align center
+        a
+          border-bottom 1px solid #eee
+          display inline-block
+          line-height 40px
+          padding 0
+          width 100%
+    #pull
+      background-color #333
+      border-radius 2px
+      display block
+      line-height 32px
+      position absolute
+      right 0
+      text-align center
+      top 20px
+      width 32px
+      &:hover
+        color #fff
+
+#about
+  background linear-gradient(rgba(255,255,255,.1) 0, rgba(255,255,255,.9) 50%, rgba(255,255,255,.5) 100%), url(../res/g0v1.jpg) center / cover no-repeat
+  color #fff
+  padding 10rem 0 3rem
+  text-align center
+  h1
+    color #333
+    font-size 2.5em
+    font-weight 800
+    line-height 1.2em
+    text-transform uppercase
+  h2
+    color #777
+    font-family "Playball", cursive
+    font-size 1.3em
+    margin 1rem 0 3rem
+  a
+    background-clip padding-box
+    background-color #fff
+    border-radius 50px
+    border 14px solid rgba(255,255,255,.5)
+    color #333
+    display inline-block
+    line-height 50px
+    width 50px
+
+#posts
+  display flex
+  flex-wrap wrap
+  justify-content flex-start
+  padding 3rem 0 4rem
+  &, *
+    transition .5s all
+  li 
+    background center / cover no-repeat
+    box-shadow 0 0 2px #999
+    flex 1 1 240px
+    height 420px
+    margin .5rem
+    overflow hidden
+    position relative
+    .fg
+      background-color rgba(255,255,255,1)
+      bottom 0
+      left 0
+      padding 4rem 2rem 0
+      position absolute
+      right 1
+      top 20%
+      h3
+        font-weight 800
+        margin-bottom 1rem
+        line-height 1.5em
+      span
+        font-style italic
+    &:hover
+      .fg
+        background-color rgba(255,255,255,.5)
+        padding-top 1.5rem
+        top 75%
+        h3
+          line-height 1.2em
+ 
+#contact
+  background-color #f3f3f3
+  border-bottom 1px solid #ddd
+  border-top 1px solid #ddd
+  max-height 20rem
+  overflow-y auto
+  padding 3rem 0
+
+footer
+  background-color #444
+  color #888
+  padding 1.5rem 1rem
+  .by
+    float right
+    font-size .8em
+
+// vi:et:nowrap:sw=2:ts=2
