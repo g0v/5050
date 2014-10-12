@@ -8,6 +8,6 @@
 
     $ npm start
 
-然後在 browser 輸入 [http://localhost:3333](http://localhost:3333)
+然後在 browser 輸入 [http://localhost:3000](http://localhost:3000)
 
 gulp 會自動幫你 compile jade to html, less to css, 合併 javascript, css 等。在更改任何一個檔案 gulp 也會幫你重新 compile。
