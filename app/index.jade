@@ -21,7 +21,7 @@ html
     #about(data-scroll-index='0',data-scroll-reveal)
       h1 The Election<br>Experiments
       h2 50 days, 50 graphs
-      a#scroll(href="#posts"): i.angle.down.icon
+      a#scroll(data-scroll-nav='1',href="#posts"): i.angle.down.icon
 
     #posts.wrap(data-scroll-index='1',data-scroll-reveal)
       a(href="http://councils.g0v.tw/suggestions/",style='background-image:url(res/slide1.jpg)')
@@ -40,7 +40,7 @@ html
       a.dsq-brlink(href='http://disqus.com') comments powered by
         span.logo-disqus Disqus
 
-    footer
+    footer(data-scroll-reveal)
       .wrap
         .by Page design by dirty
         | g0v 50/50 project
