@@ -32,12 +32,9 @@ gulp.task \css ->
 
 gulp.task \html ->
   html = gulp.src paths.app+\/**/*.html
-  jade = gulp.src paths.app+\/**/index.jade .pipe gulp-jade {+pretty}
+  jade = gulp.src paths.app+\/**/*.jade .pipe gulp-jade {+pretty}
   streamqueue {+objectMode}
     .done html, jade
-    .pipe gulp.dest paths.build
-    .pipe livereload!
-  gulp.src \README.md .pipe gulp-markdown!
     .pipe gulp.dest paths.build
     .pipe livereload!
 

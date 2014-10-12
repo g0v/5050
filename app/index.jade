@@ -23,11 +23,15 @@ html
       h2 50 days, 50 graphs
       a#scroll(href="#posts"): i.angle.down.icon
 
-    ol#posts.wrap(data-scroll-index='1',data-scroll-reveal)
-      li(style='background-image:url(res/slide1.jpg)')
+    #posts.wrap(data-scroll-index='1',data-scroll-reveal)
+      a(href="http://councils.g0v.tw/suggestions/",style='background-image:url(res/slide1.jpg)')
         .fg
-          h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          span Lorem Ipsum
+          h3 議員投票指南
+          span by johnny
+      a(href="http://muyueh.com/30/base_line/",style='background-image:url(res/slide1.jpg)')
+        .fg
+          h3 選舉基準線（'10 村里長）
+          span by muyueh
 
     #contact(data-scroll-index='2',data-scroll-reveal)
       #disqus_thread.wrap
